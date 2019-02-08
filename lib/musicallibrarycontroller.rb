@@ -45,7 +45,7 @@ require 'pry'
 
    def list_songs
     counter = 1
-    Song.all.sort_by(:name).map { |song|
+    Song.all.sort_by(&:name).map { |song|
       puts "#{counter}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
       counter+=1
     }
