@@ -4,7 +4,7 @@ require_relative './concerns/findable'
  class Artist
 
    attr_accessor :name, :song, :genre
-  attr_reader :songs
+   attr_reader :songs
 
    extend Concerns::Findable
 
