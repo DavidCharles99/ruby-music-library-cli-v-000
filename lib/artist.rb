@@ -25,7 +25,7 @@ require_relative './concerns/findable'
   end
 
    def genres
-    
+
     @genres = []
      songs.map { |song|
       @genres << song.genre
